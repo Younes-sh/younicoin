@@ -2,7 +2,7 @@ import React from 'react'
 
 const Apicoin = () => {
   return (
-    <div>Apicoin</div>
+    <div className=''>Apicoin</div>
   )
 }
 

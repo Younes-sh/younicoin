@@ -6,20 +6,26 @@ const Navbar = () => {
   return (
     <div>
 
-      <div >
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-        
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+      <div style={{width:'100%', height:70 , backgroundColor:'#000000' , display:'flex' , justifyContent:'space-between' , alignItems:'center'}}>
+        <div>
+          <ul >
+            <li style={{display:'inline-block' , marginLeft:50}}>
+              <Link style={{color:'wheat' , textDecoration:'none'}} to="/">Home</Link>
+            </li>
+          
+            <li style={{display:'inline-block' , marginLeft:50}}>
+              <Link style={{color:'wheat' , textDecoration:'none'}} to="/contact">Contact</Link>
+            </li>
 
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
+            <li style={{display:'inline-block' , marginLeft:50}}>
+              <Link style={{color:'wheat' , textDecoration:'none'}} to="/about">About</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          
+        </div>
+
       </div>
       
     </div>
