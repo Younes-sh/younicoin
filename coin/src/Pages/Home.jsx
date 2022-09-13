@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Apicoin from '../Components/Apicoin'
 const Home = () => {
   return (
-    <div className='bg-cyan-500 hover:bg-cyan-600'>Home</div>
+    <>
+
+      <Apicoin  />
+    </>
   )
 }
 

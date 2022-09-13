@@ -1,9 +1,48 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react';
+import axios from 'axios';
 
+const client = axios.create({
+    baseURL:'https://api.coingecko.com/api/v3/coins'
+})
 const Apicoin = () => {
+
+    const [posts , setPosts] = useState ([]);
+    useEffect(() => {
+        client.get().then((response) => {
+            setPosts(response.data)
+        })
+    })
+    
   return (
-    <div className=''>Apicoin</div>
+    <>
+        <div style={{width:570 , height:750 , overflow:'scroll' , backgroundColor:'#191717' , padding:20 , borderRadius:20 }}>
+            <table style={{textAlign:'left'}}>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Pricr 24h</th>
+                    <th>Price</th>
+                </tr>
+                {posts.map((post) => {
+                    return (
+                        <>
+                            <tr>
+                                <td><img src={post.image.thumb} /></td>                               
+                                <td>{post.name}</td>
+                                <td>{post.symbol}</td>
+                                <td>{post.market_data.price_change_24h}</td>
+                                <td>{post.market_data.total_supply}</td>
+                            </tr>
+                        
+                        </>
+                    )
+                })}
+            </table>
+
+        </div>
+    </>
   )
 }
 
-export default Apicoin
+export default Apicoin ;
