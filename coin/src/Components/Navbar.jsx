@@ -20,6 +20,9 @@ const Navbar = () => {
             <li style={{display:'inline-block' }}>
               <Link style={{color:'wheat' , textDecoration:'none'}} to="/about">About</Link>
             </li>
+            <li style={{display:'inline-block' }}>
+              <Link style={{color:'wheat' , textDecoration:'none'}} to="/converter">Converter</Link>
+            </li>
           </ul>
         </div>
         <div style={{width:'50%' , display:'flex' , justifyContent:'end' , padding:50}}>

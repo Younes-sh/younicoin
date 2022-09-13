@@ -21,7 +21,7 @@ const Apicoin = () => {
                     <th></th>
                     <th>Name</th>
                     <th>Symbol</th>
-                    <th>Pricr 24h</th>
+                    <th>Pricr change 24h</th>
                     <th>Price</th>
                 </tr>
                 {posts.map((post) => {
