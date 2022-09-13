@@ -15,7 +15,7 @@ const Apicoin = () => {
     
   return (
     <>
-        <div style={{width:570 , height:750 , overflow:'scroll' , backgroundColor:'#191717' , padding:20 , borderRadius:20 }}>
+        <div style={{maxWidth:'100%' , height:750 , overflow:'scroll' , backgroundColor:'#191717' , padding:20  }}>
             <table style={{textAlign:'left'}}>
                 <tr>
                     <th></th>

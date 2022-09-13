@@ -6,7 +6,7 @@ import Home from "./Pages/Home" ;
 import Contact from './Pages/Contact' ;
 import About from './Pages/About' ;
 import Converter from "./Pages/Converter";
-
+import Homes from './Pages/Homes'
 
 
 const Routing = () => {
@@ -19,6 +19,7 @@ const Routing = () => {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/converter" element={<Converter />} />
+            <Route exact path="/homes" element={<Homes />} />
 
         </Routes>
 
