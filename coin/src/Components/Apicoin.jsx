@@ -1,6 +1,6 @@
 import React,{useState , useEffect} from 'react';
 import axios from 'axios';
-
+import  './Apicoin.css'
 const client = axios.create({
     baseURL:'https://api.coingecko.com/api/v3/coins'
 })
@@ -23,16 +23,21 @@ const Apicoin = () => {
                     <th>Symbol</th>
                     <th>Pricr change 24h</th>
                     <th>Price</th>
+                    <th>total supply</th>
+                    <th>last updated</th>
                 </tr>
                 {posts.map((post) => {
                     return (
                         <>
                             <tr>
-                                <td><img src={post.image.thumb} /></td>                               
+                                <td><img src={post.image.small} /></td>                               
                                 <td>{post.name}</td>
                                 <td>{post.symbol}</td>
                                 <td>{post.market_data.price_change_24h}</td>
                                 <td>{post.market_data.total_supply}</td>
+                                <td>{post.market_data.total_supply}</td>
+                                <td>{post.last_updated}</td>
+                                {/* <td>{post}</td> */}
                             </tr>
                         
                         </>
