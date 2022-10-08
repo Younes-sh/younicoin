@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='Navbar w-full h-64 bg-zinc-800'>
 
       <div >
         <ul>
