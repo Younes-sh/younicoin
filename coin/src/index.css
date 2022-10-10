@@ -1,33 +1,31 @@
 body {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-image: linear-gradient(to right, #2c2828 0%, black 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.Routing {
-  padding: 0;
-  margin: 0;
-}
+
 /* Navbar */
 .Navbar {
   display: flex;
-  background-color: black;
+  background-color: rgb(19, 19, 32);  
 }
 .Navbar ul {
   display: flex;
 }
 .Navbar ul li {
   margin: 0 20px;
+  list-style-type: none;
 }
 .Navbar a {
   text-decoration: none; 
@@ -38,42 +36,101 @@ code {
   width: 100%;
   height: 1900px;
   padding: 50px;
-  background-color: rgb(41, 43, 43);
+  /* background-color: rgb(41, 43, 43); */
+
   color: aliceblue;
 }
 .chart-coin {
   width: 100%;
   height:auto;
 }
-.Coin {
-  width: 100%;
-  height: 50%;
-}
+
 .Graph  {
   width: 90%;
   height: 50%;
   padding: 15px;
   border: solid 1px gray;
+  align-items: center;
 }
 
 /*  */
-.Apicoin {
-  width: 100%;
+.Coin {
+  width: 96%;
   height: 500px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* background-color: aliceblue; */
 }
 
 
 .Table{
   width: 90%;
+  text-align: center;
+}
+.TableHead {
+
+}
+.infoList  {
+  border: solid 1px;
+  border-radius: 15px;
+}
+.infoList {
+  text-align: center;
 }
 .infoList:nth-child(odd) {
-  background-color: rgb(44, 48, 51);
-
+  background-color: rgba(44, 48, 51, 0.548);
 }
 
-.display {
 
+@media screen and (max-width:961px) {
+  .display {
+    display: none;
+  }
+}
+@media screen and (max-width:761px) {
+  .display2 {
+    display: none;
+  }
+}
+@media screen and (max-width:651px) {
+  .display3 {
+    display: none;
+  }
+}
+@media screen and (max-width:500px) {
+  .display4 {
+    display: none;
+  }
+}
+
+
+/* ------------------- */
+.Nft {
+  width: 100%;
+  height: auto;
+  padding: 0 25px;
+  color: aliceblue;
+
+}
+.container {
+  display: grid;
+  grid-template-columns:auto auto auto;
+}
+.container-cars {
+  width: 490px;
+  height: 150px;
+  margin: 2px;
+  /* background-color:'brown'; */
+  background-image: linear-gradient(135deg, #29323c 10%, #485563 100%);
+
+  
+}
+.Cards {
+  border-radius: 15px;
+  padding: 20px ;
+  color:'wheat' ;
+  margin:5 ;
+  line-break: anywhere;
 }

@@ -3,7 +3,7 @@ import axios from 'axios';
 const client = axios.create({
     baseURL:'https://api.coingecko.com/api/v3/coins'
 })
-const Apicoin = () => {
+const Coin = () => {
 
     const [posts , setPosts] = useState ([]);
     useEffect(() => {
@@ -16,17 +16,17 @@ const Apicoin = () => {
     <>
       
   
-        <div className='Apicoin'>
+        <div className='Coin'>
           
-            <table style={{textAlign:'left'}} className='Table'>
-                <tr className=''>
+            <table style={{textAlign:'center'}} className='Table'>
+                <tr className='TableHead'>
                     <th></th>
                     <th>Name</th>
-                    <th>Symbol</th>
-                    <th>Pricr change 24h</th>
-                    <th>Price</th>
-                    <th>total supply</th>
-                    <th>last updated</th>
+                    <th className='display4'>Symbol</th>
+                    <th className='display3'>Price change 24h</th>
+                    <th className=''>Price</th>
+                    <th className='display2'>total supply</th>
+                    <th className='display'>last updated</th>
                 </tr>
                 {posts.map((post) => {
                     return (
@@ -34,10 +34,10 @@ const Apicoin = () => {
                             <tr className='infoList'>
                                 <td className=''><img src={post.image.small} alt='symbol'/></td>                               
                                 <td className=''>{post.name}</td>
-                                <td className='display'>{post.symbol}</td>
-                                <td className='display'>{post.market_data.price_change_24h}</td>
+                                <td className='display4'>{post.symbol}</td>
+                                <td className='display3'>{post.market_data.price_change_24h}</td>
                                 <td className=''>{post.market_data.total_supply}</td>
-                                <td className='display'>{post.market_data.total_supply}</td>
+                                <td className='display2'>{post.market_data.total_supply}</td>
                                 <td className='display'>{post.last_updated}</td>
                                     {/* ------------------------------------------ */}
                             </tr>
@@ -52,4 +52,4 @@ const Apicoin = () => {
   )
 }
 
-export default Apicoin ;
+export default Coin ;
