@@ -1,18 +1,28 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
-import { css } from '@emotion/react';
+import CHART from '../Components/Chart/Chart';
 
 
+class Home extends React.Component{
+  constructor(props){
+    super(props)
+  }
+  render () {
 
-const Home = () => {
-  return (
-    <div className='w-full h-screen bg-red-400' >
-      <h1>Younes</h1>
-      <span>sheikhlar</span>
-
-        <Coins />
-    </div>
-  )
+    return (
+      <div className='Home' >
+        <div className='chart-coin'>
+          <div className='Coin'>
+            <Coins />
+          </div>
+          <div className='Graph'>
+          <CHART />
+          </div>
+        </div>
+       
+      </div>
+    )
+  }
 }
 
 export default Home

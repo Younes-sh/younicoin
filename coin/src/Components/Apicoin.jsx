@@ -14,9 +14,12 @@ const Apicoin = () => {
     
   return (
     <>
-        <div className='w-full bg-red-400'>
-            <table style={{textAlign:'left'}}>
-                <tr>
+      
+  
+        <div className='Apicoin'>
+          
+            <table style={{textAlign:'left'}} className='Table'>
+                <tr className=''>
                     <th></th>
                     <th>Name</th>
                     <th>Symbol</th>
@@ -28,15 +31,15 @@ const Apicoin = () => {
                 {posts.map((post) => {
                     return (
                         <>
-                            <tr>
-                                <td><img src={post.image.small} alt='symbol'/></td>                               
-                                <td>{post.name}</td>
-                                <td>{post.symbol}</td>
-                                <td>{post.market_data.price_change_24h}</td>
-                                <td>{post.market_data.total_supply}</td>
-                                <td>{post.market_data.total_supply}</td>
-                                <td>{post.last_updated}</td>
-                                {/* <td>{post}</td> */}
+                            <tr className='infoList'>
+                                <td className=''><img src={post.image.small} alt='symbol'/></td>                               
+                                <td className=''>{post.name}</td>
+                                <td className='display'>{post.symbol}</td>
+                                <td className='display'>{post.market_data.price_change_24h}</td>
+                                <td className=''>{post.market_data.total_supply}</td>
+                                <td className='display'>{post.market_data.total_supply}</td>
+                                <td className='display'>{post.last_updated}</td>
+                                    {/* ------------------------------------------ */}
                             </tr>
                         
                         </>
