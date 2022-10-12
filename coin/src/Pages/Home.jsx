@@ -1,8 +1,9 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
 import CHART from '../Components/Chart/Chart';
-
-
+// import TextMove from '../Components/TextMove/TextMove'
+// import Marquee from '../Components/Marquee/Marquee'
+// import TextAnimation from '../Components/TextAnimation/TextAnimation'
 class Home extends React.Component{
   constructor(props){
     super(props)
@@ -11,6 +12,10 @@ class Home extends React.Component{
 
     return (
       <div className='Home' >
+        {/* <TextAnimation /> */}
+        {/* <Marquee />
+         */}
+        {/* <TextMove /> */}
         <div className='chart-coin'>
           <div className='Coin'>
             <Coins />
