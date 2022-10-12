@@ -1,9 +1,7 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
-import CHART from '../Components/Chart/Chart';
-// import TextMove from '../Components/TextMove/TextMove'
-// import Marquee from '../Components/Marquee/Marquee'
-// import TextAnimation from '../Components/TextAnimation/TextAnimation'
+import CryptoChart from '../Components/Crypto/Crypto'
+
 class Home extends React.Component{
   constructor(props){
     super(props)
@@ -21,7 +19,7 @@ class Home extends React.Component{
             <Coins />
           </div>
           <div className='Graph'>
-          <CHART />
+            <CryptoChart />
           </div>
         </div>
        
