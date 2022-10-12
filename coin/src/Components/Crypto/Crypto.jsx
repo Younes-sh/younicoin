@@ -17,7 +17,8 @@ const  Crypto = () => {
       <h3>ADA/USDT</h3>
       <TradeViewChart
         containerStyle={{
-           minHeight: '700px',
+          minHeight: '700px',
+          minWidth: '1200px',
           marginBottom: '30px',
         }}
         pair="ADAUSDT"
@@ -29,7 +30,8 @@ const  Crypto = () => {
       <h3>ETH/USDT</h3>
       <TradeViewChart
         containerStyle={{
-                    minWidth: '1200px',
+          minHeight: '700px',
+          minWidth: '1200px',
           marginBottom: '30px',
         }}
         pair="ETHUSDT"
