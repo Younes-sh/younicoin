@@ -47,7 +47,8 @@ code {
 
 .Graph  {
   width: 90%;
-  height: 50%;
+  height: 600px;
+  align-items: center;
   padding: 15px;
   border: solid 1px gray;
   align-items: center;
@@ -124,8 +125,9 @@ code {
   margin: 2px;
   /* background-color:'brown'; */
   background-image: linear-gradient(135deg, #29323c 10%, #485563 100%);
-
-  
+}
+.container-cars:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .Cards {
   border-radius: 15px;
@@ -133,4 +135,9 @@ code {
   color:'wheat' ;
   margin:5 ;
   line-break: anywhere;
+}
+
+.parent {
+  width: 100%;
+  height: auto;
 }

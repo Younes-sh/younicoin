@@ -1,7 +1,6 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
-import CHART from '../Components/Chart/Chart';
-
+import CryptoChart from '../Components/Crypto/Crypto'
 
 class Home extends React.Component{
   constructor(props){
@@ -16,7 +15,7 @@ class Home extends React.Component{
             <Coins />
           </div>
           <div className='Graph'>
-          <CHART />
+            <CryptoChart />
           </div>
         </div>
        
