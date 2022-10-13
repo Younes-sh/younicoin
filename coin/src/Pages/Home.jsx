@@ -19,9 +19,7 @@ class Home extends React.Component{
             <Coins />
           </div>
           <div className='Graph'>
-            <div>
               <Tab />
-            </div>
           </div>
         </div>
        
