@@ -7,7 +7,7 @@ import Contact from './Pages/Contact' ;
 import About from './Pages/NFT' ;
 import Signup from './Pages/Signup';
 import Login from './Pages/Login'
-
+import Landing from './Pages/LandingPage'
 
 const Routing = () => {
 
@@ -19,6 +19,8 @@ const Routing = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
+
+            <Route exact path="/landing" element={<Landing />} />
         </Routes>
 
     )
