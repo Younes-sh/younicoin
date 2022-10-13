@@ -1,10 +1,11 @@
 import React from 'react';
 import TradeViewChart from 'react-crypto-chart';
 
-const  Crypto = () => {
-  return (
-    <div className="parent">
-      <h3>BTC/USDT</h3>
+
+ const BTCUSDT = () => {
+  return(
+    <div className='parent'>
+       <h3>BTC/USDT</h3>
       <TradeViewChart
         containerStyle={{
           minHeight: '700px',
@@ -13,8 +14,14 @@ const  Crypto = () => {
         }}
         pair="BTCUSDT"
       />
-      {/* ------------------------- */}
-      <h3>ADA/USDT</h3>
+    </div>
+  )
+}
+
+ const ADAUSDT = () => {
+  return (
+    <div className='parent'>
+       <h3>ADA/USDT</h3>
       <TradeViewChart
         containerStyle={{
           minHeight: '700px',
@@ -23,11 +30,15 @@ const  Crypto = () => {
         }}
         pair="ADAUSDT"
       />
+    </div>
+  )
+}
 
-{/* --------------------- */}
 
-
-      <h3>ETH/USDT</h3>
+ const ETHUSDT = () => {
+  return (
+    <div className='parent'>
+        <h3>ETH/USDT</h3>
       <TradeViewChart
         containerStyle={{
           minHeight: '700px',
@@ -36,10 +47,12 @@ const  Crypto = () => {
         }}
         pair="ETHUSDT"
       />
+    </div>
+  )
+}
+
+    
 
 
       
-    </div>
-  );
-}
-export default Crypto ;
+export  { BTCUSDT, ADAUSDT , ETHUSDT  };

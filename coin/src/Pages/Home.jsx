@@ -1,6 +1,6 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
-import CryptoChart from '../Components/Crypto/Crypto'
+import Tab from '../Components/Tab/Tab'
 
 class Home extends React.Component{
   constructor(props){
@@ -19,7 +19,9 @@ class Home extends React.Component{
             <Coins />
           </div>
           <div className='Graph'>
-            <CryptoChart />
+            <div>
+              <Tab />
+            </div>
           </div>
         </div>
        
@@ -28,4 +30,4 @@ class Home extends React.Component{
   }
 }
 
-export default Home
+export default Home ;

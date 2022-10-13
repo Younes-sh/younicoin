@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
+import Tab from '../Components/Tab/Tab'
 const NFT = axios.create({
   baseURL:"https://api.coingecko.com/api/v3/nfts/list"
 })
@@ -18,6 +19,7 @@ const About = () => {
 
   return (
     <div className='Nft'>
+      <Tab />
       <h1>NFT</h1>
       <div className='container'>
           {
