@@ -51,9 +51,9 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Bitcoin" {...a11yProps(0)}  />
-          <Tab label="Cardano" {...a11yProps(1)}  />
-          <Tab label="Etherium" {...a11yProps(2)}  />
+          <Tab label="Bitcoin"  sx={{color:'white'}} {...a11yProps(0)}  />
+          <Tab label="Cardano"  sx={{color:'white'}} {...a11yProps(1)}  />
+          <Tab label="Etherium" sx={{color:'white'}}  {...a11yProps(2)}  />
         </Tabs>
       </Box>
         <TabPanel value={value} index={0}>
