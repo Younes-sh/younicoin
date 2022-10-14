@@ -30,7 +30,7 @@ import Box from '@mui/material/Box';
         <h3>ADA/USDT</h3>
         <TradeViewChart
           containerStyle={{
-            minHeight: '500px',
+            minHeight: '300px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
@@ -50,7 +50,7 @@ import Box from '@mui/material/Box';
           <h3>ETH/USDT</h3>
         <TradeViewChart
           containerStyle={{
-            minHeight: '500px',
+            minHeight: '300px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
