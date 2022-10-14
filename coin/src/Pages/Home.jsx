@@ -2,6 +2,9 @@ import React from 'react'
 import Coins from '../Components/Apicoin';
 import Tab from '../Components/Tab/Tab'
 import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box'
+
+
 
 const Home = () => {
   // constructor(props){
@@ -14,19 +17,21 @@ const Home = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center" spacing={0}>
-                <div className='Home' >
+                <Box sx={{color:'white'}}>
+                  <div className='Home' >
 
-                    <div className='chart-coin'>
-                      <div className='Graph'>
-                          <Tab />
+                      <div className='chart-coin'>
+                        <div className='Graph'>
+                            <Tab />
+                        </div>
+                        <div className='Coin'>
+                          <Coins />
+                        </div>
                       </div>
-                      <div className='Coin'>
-                        <Coins />
-                      </div>
-                    </div>
-              
                 
-                </div>
+                  
+                  </div>
+                </Box>
         </Grid>
     )
   }

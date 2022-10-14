@@ -40,7 +40,7 @@ const Coin = () => {
       
   
         <div className='Coin'>
-            <Box sx={{ backgroundColor:''}}>
+            <Box sx={{ margin:'50px'}}>
                 <table style={{textAlign:'center'}} className='Table'>
                     <tr className='TableHead'>
                         <th></th>

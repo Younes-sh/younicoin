@@ -5,12 +5,12 @@ import Box from '@mui/material/Box';
 
  const BTCUSDT = () => {
   return(
-    <Box style={{width:'100%'}}>
+    <Box style={{width:'100%', height:''}}>
         <div className='parent'  >
         <h3>BTC/USDT</h3>
         <TradeViewChart
           containerStyle={{
-            minHeight: '500px',
+            minHeight: '300px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
