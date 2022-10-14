@@ -1,18 +1,37 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
-const NFT = axios.create({
-  baseURL:"https://api.coingecko.com/api/v3/nfts/list"
-})
+// const NFT = axios.create({
+//   baseURL:"https://api.coingecko.com/api/v3/nfts/list"
+// })
 const About = () => {
   const [posts , setPosts] = useState ([])
-  useEffect(() => {
-      NFT.get().then((Response) => {
-        setPosts(Response.data)
-      })
-  })
+  // useEffect(() => {
+  //     NFT.get().then((Response) => {
+  //       setPosts(Response.data)
+  //     })
+  // })
 
 
+// --------------------------
 
+useEffect(() => {
+  const url = "https://api.coingecko.com/api/v3/nfts/list";
+
+  const fetchData = async () => {
+      try {
+          const response = await fetch(url);
+          const json = await response.json();
+          console.log(json);
+          setPosts(json);
+      } catch (error) {
+          console.log("error", error);
+      }
+  };
+
+  fetchData();
+}, []);
+
+// --------------------------
 
 
 

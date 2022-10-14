@@ -1,31 +1,35 @@
 import React from 'react'
 import Coins from '../Components/Apicoin';
 import Tab from '../Components/Tab/Tab'
+import Grid from '@mui/material/Grid';
 
-class Home extends React.Component{
-  constructor(props){
-    super(props)
-  }
-  render () {
+const Home = () => {
+  // constructor(props){
+  //   super(props)
+  // }
+
 
     return (
-      <div className='Home' >
-        {/* <TextAnimation /> */}
-        {/* <Marquee />
-         */}
-        {/* <TextMove /> */}
-        <div className='chart-coin'>
-          <div className='Coin'>
-            <Coins />
-          </div>
-          <div className='Graph'>
-              <Tab />
-          </div>
-        </div>
-       
-      </div>
+        <Grid   container
+                direction="row"
+                justifyContent="center"
+                alignItems="center" spacing={0}>
+                <div className='Home' >
+
+                    <div className='chart-coin'>
+                      <div className='Graph'>
+                          <Tab />
+                      </div>
+                      <div className='Coin'>
+                        <Coins />
+                      </div>
+                    </div>
+              
+                
+                </div>
+        </Grid>
     )
   }
-}
+
 
 export default Home ;
