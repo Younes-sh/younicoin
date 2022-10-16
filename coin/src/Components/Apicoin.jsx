@@ -1,22 +1,11 @@
 import React,{useState , useEffect} from 'react';
-import axios from 'axios';
 import Box from '@mui/material/Box';
-import { request } from 'https';
 
-// const client = axios.create({
-//     baseURL:'https://api.coingecko.com/api/v3/coins'
-// })
 
 
 const Coin = () => {
 
     const [posts , setPosts] = useState ([]);
-    // useEffect(() => {
-    //     client.get().then((response) => {
-    //         setPosts(response.data)
-    //     })
-    // })
-    // -------------------------------
 
     useEffect(() => {
         const url = "https://api.coingecko.com/api/v3/coins";

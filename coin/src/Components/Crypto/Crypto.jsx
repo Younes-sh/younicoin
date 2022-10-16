@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
     <Box style={{width:'100%', height:''}}>
         <div className='parent'  >
         <h3>BTC/USDT</h3>
-        <TradeViewChart
+        <TradeViewChart 
           containerStyle={{
             minHeight: '300px',
             minWidth: '100px',

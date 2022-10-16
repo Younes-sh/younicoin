@@ -5,7 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
- background-color: #29323c;
+background: rgb(11,11,93);
+background: -moz-linear-gradient(262deg, rgba(11,11,93,0.9248074229691877) 23%, rgba(40,32,64,1) 47%, rgba(90,50,124,1) 71%);
+background: -webkit-linear-gradient(262deg, rgba(11,11,93,0.9248074229691877) 23%, rgba(40,32,64,1) 47%, rgba(90,50,124,1) 71%);
+background: linear-gradient(262deg, rgba(11,11,93,0.9248074229691877) 23%, rgba(40,32,64,1) 47%, rgba(90,50,124,1) 71%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0b5d",endColorstr="#5a327c",GradientType=1);
 }
 
 code {
@@ -40,6 +44,12 @@ code {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.093);
   border-radius: 15px;
+
+  background: rgb(4,4,55);
+background: -moz-linear-gradient(317deg, rgba(4,4,55,0.9248074229691877) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
+background: -webkit-linear-gradient(317deg, rgba(4,4,55,0.9248074229691877) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
+background: linear-gradient(317deg, rgba(4,4,55,0.9248074229691877) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040437",endColorstr="#5a327c",GradientType=1);
 }
 
 /*  */
@@ -145,3 +155,5 @@ code {
   height: 20px;
   display: flex;
 }
+
+/* TradeViewChar ----------------- */

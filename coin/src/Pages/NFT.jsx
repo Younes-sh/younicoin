@@ -1,15 +1,7 @@
 import React,{useState,useEffect} from 'react'
-import axios from 'axios';
-// const NFT = axios.create({
-//   baseURL:"https://api.coingecko.com/api/v3/nfts/list"
-// })
+
 const About = () => {
   const [posts , setPosts] = useState ([])
-  // useEffect(() => {
-  //     NFT.get().then((Response) => {
-  //       setPosts(Response.data)
-  //     })
-  // })
 
 
 // --------------------------
