@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Box } from "@mui/system";
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import CloseIcon from '@mui/icons-material/Close';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 function ModalSlid() {
   const [alert, setAlert] = useState("");
@@ -15,43 +16,45 @@ function ModalSlid() {
   }, [alert]);
 
   return (
-    <Box sx={{}}>
+    <Box>
       <div className="">
-        <button
-          className="Button CenterAlign"
-          onClick={() => setDisplayModal(!displayModal)}
-        >
-          <KeyboardDoubleArrowUpIcon />
-        </button>
-        <Box sx={{}}>
-          <div className={`Modal ${displayModal ? "Show" : ""}`} style={{borderRadius:'25px 25px 0 0'}}>
-            <button
+          <button
             className="Button CenterAlign"
             onClick={() => setDisplayModal(!displayModal)}
           >
-            <CloseIcon />
+            <KeyboardDoubleArrowUpIcon />
           </button>
-            <h3>Settings</h3>
-            <Box sx={{backgroundColor:'red'}}>
-              <button
+            <div className={`Modal ${displayModal ? "Show" : ""}`} >
+              {/* <button
+              className="Button CenterAlign"
+              onClick={() => setDisplayModal(!displayModal)}
+              >
+              </button> */}
+              <h3>Settings</h3>
+             
+              <button 
                 className="Close"
                 onClick={() => setDisplayModal(!displayModal)}
               >
-                X
+                <ExpandMoreIcon />
+                
               </button>
-            </Box>
-            <p className="HelpText" style={{color:'red'}}>
-              Note: these settings are saved in the browser only and can be lost
-            </p>
-        
-          </div>
-        </Box>
-
+                <Box sx={{ width:'100%' ,display:'flex' , justifyContent:'space-evenly'}}>
+                  <div>
+                    <p>Younes</p>
+                    <p>1</p>
+                  </div>
+                  <div>
+                    <p>Sheikhlar</p>
+                    <p>2</p>
+                  </div>
+                </Box>
+            </div>
         <div
           className={`Overlay ${displayModal ? "Show" : ""}`}
           onClick={() => setDisplayModal(!displayModal)}
         />
-        <p className="Alert">{alert}</p>
+        
       </div>
     
     </Box>

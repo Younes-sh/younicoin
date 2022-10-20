@@ -17,7 +17,7 @@ const Home = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center" spacing={0}>
-                <Box sx={{color:'white'}}>
+                <Box sx={{color:'white' , marginTop:'20px'}}>
                   <div className='Home' >
 
                       <div className='chart-coin'>

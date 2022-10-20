@@ -9,12 +9,16 @@ function App() {
 	return (
 		<div>
 			<BrowserRouter>
-			<Box sx={{ width:'100%',position:'fixed',zIndex:'9'}}>
-				<Navbar />
-			</Box>
-				<Routing />
-				<Box >
-					<NavbarMobile />
+				<Box sx={{display:'flex' , flexDirection:'column'}}>
+					<Box sx={{ width:'100%',position:'fixed',zIndex:'9'}}>
+						<Navbar />
+					</Box>
+
+						<Routing />
+
+					<Box sx={{ display: {  md: 'none' } }}>
+						<NavbarMobile />
+					</Box>
 				</Box>
 			</BrowserRouter>
 		</div>
