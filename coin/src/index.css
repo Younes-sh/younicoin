@@ -42,15 +42,15 @@ code {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.093);
   /* border-radius: 15px; */
-  background: rgb(4,4,55);
+  background-color: linear-gradient(#2C3E50 , #000000);
   border-radius: 0 0 25px  25px;  
   
 
 
-background: -moz-linear-gradient(317deg, rgb(1, 1, 8) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
+/* background: -moz-linear-gradient(317deg, rgb(1, 1, 8) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
 background: -webkit-linear-gradient(317deg, rgba(15, 15, 82, 0.925) 23%, rgba(53,32,64,1) 53%, rgba(90,50,124,1) 86%);
 background: linear-gradient(317deg, rgb(4, 4, 55) 23%, rgb(57, 23, 75) 53%, rgba(90,50,124,1) 86%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040437",endColorstr="#5a327c",GradientType=1);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040437",endColorstr="#5a327c",GradientType=1); */
 }
 
 /*  */
@@ -152,7 +152,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040437",endCo
   color: #000;
   position: absolute;
   border-radius: 50%;
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 .Overlay.Show {
@@ -177,8 +177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040437",endCo
   border-left-color: transparent;
   border-right-color: transparent;
   animation: multiColor 2s infinite ;
-  background: rgb(46,6,78);
-  background: linear-gradient(90deg, rgba(46,6,78,1) 0%, rgba(64,15,98,1) 52%, rgba(82,9,112,1) 100%);
+  background: linear-gradient(20deg,#2C3E50 , #000000);
 }
 @keyframes multiColor {
   0%   {border-top-color:linear-gradient(90deg, rgba(46,6,78,1) 0%, rgba(64,15,98,1) 52%, rgba(82,9,112,1) 100%);}

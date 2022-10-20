@@ -16,7 +16,6 @@ function ModalSlid() {
   }, [alert]);
 
   return (
-    <Box>
       <div className="">
           <button
             className="Button CenterAlign"
@@ -57,7 +56,6 @@ function ModalSlid() {
         
       </div>
     
-    </Box>
   );
 }
 

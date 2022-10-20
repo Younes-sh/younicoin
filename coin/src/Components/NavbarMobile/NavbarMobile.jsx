@@ -8,9 +8,9 @@ const NavbarMobile = () => {
     return(
         <div className='NavMobile'>
 
-            <Box  sx={{width:'100%',display:'flex' ,justifyContent:'center',position:'relative', border:'solid '}}>
+            <Box  sx={{width:'100%',display:'flex' ,justifyContent:'center',position:'relative'}}>
                 <div >
-                    <Box sx={{position:'absolute',marginTop:'-20px'}}>
+                    <Box sx={{marginTop:'-20px'}}>
                         <ModalSlid />
                     </Box>
                         <ul style={{ display:'flex' }}>
