@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 
 const Navbar = () => {
   return (
-      <div className='Navbar' sx={{width:'100%',display:'flex' , justifyContent:'center'}} >
+      <div  >
         <Box sx={{ width:'100%',display:'flex' , backgroundColor:'#2d2a36'}}>
           <div>
             <ul style={{ display:'flex' }}>

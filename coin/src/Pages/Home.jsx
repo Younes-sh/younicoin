@@ -2,36 +2,32 @@ import React from 'react'
 import Coins from '../Components/Apicoin';
 import Tab from '../Components/Tab/Tab'
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box'
+import styled from 'styled-components';
 
-
-
+const Div = styled.div`
+  color:white;
+  margin-top: 60px;
+`;
+const Graph = styled.div`
+  background-color:
+`;
 const Home = () => {
-  // constructor(props){
-  //   super(props)
-  // }
-
-
     return (
         <Grid   container
                 direction="row"
                 justifyContent="center"
                 alignItems="center" spacing={0}>
-                <Box sx={{color:'white' , marginTop:'20px'}}>
-                  <div className='Home' >
+                  <Div className='Home' sx={{color:'white'}}>
 
-                      <div className='chart-coin'>
-                        <div className='Graph'>
+                        <Graph className='Graph' style={{backgroundColor:'#f96d00',marginTop:'60px'}}>
                             <Tab />
-                        </div>
+                        </Graph>
                         <div className='Coin'>
                           <Coins />
                         </div>
-                      </div>
                 
                   
-                  </div>
-                </Box>
+                  </Div>
         </Grid>
     )
   }

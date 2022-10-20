@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Box } from "@mui/system";
+import Box from '@mui/material/Box';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
 
 function ModalSlid() {
   const [alert, setAlert] = useState("");
@@ -17,12 +16,15 @@ function ModalSlid() {
 
   return (
       <div className="">
-          <button
-            className="Button CenterAlign"
-            onClick={() => setDisplayModal(!displayModal)}
-          >
-            <KeyboardDoubleArrowUpIcon />
-          </button>
+      
+        <Box sx={{borderRadius:'50%'}}>
+            <button 
+                className=" "
+                onClick={() => setDisplayModal(!displayModal)}
+              >
+                <KeyboardDoubleArrowUpIcon />
+            </button>
+        </Box> 
             <div className={`Modal ${displayModal ? "Show" : ""}`} >
               {/* <button
               className="Button CenterAlign"
@@ -31,7 +33,7 @@ function ModalSlid() {
               </button> */}
               <h3>Settings</h3>
              
-              <button 
+              <button style={{width:'40px',borderRadius:'50%'}}
                 className="Close"
                 onClick={() => setDisplayModal(!displayModal)}
               >

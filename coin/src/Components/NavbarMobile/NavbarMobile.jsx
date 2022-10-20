@@ -13,7 +13,7 @@ const NavbarMobile = () => {
                     <Box sx={{marginTop:'-20px'}}>
                         <ModalSlid />
                     </Box>
-                        <ul style={{ display:'flex' }}>
+                        <ul style={{ display:'flex' }} >
                             <li style={{ listStyleType:'none' , margin:15}} >
                                 <Link style={{color:'white', textDecoration:'none'}}  to="/"><HomeIcon /></Link>
                             </li>
