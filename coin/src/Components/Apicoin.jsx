@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 const Box = styled.div`
     width: 90%;
-    margin-top: 40px;
+    margin: 40px 0;
 `;
 
 const Table = styled.table`
