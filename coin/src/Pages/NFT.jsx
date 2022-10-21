@@ -17,6 +17,7 @@ const Cards = styled.div`
   margin: 21px;
   box-shadow: 0 0 3px gray;
   border-radius: 7px;
+  padding: 15px ;
 `;
 
 
@@ -26,8 +27,21 @@ const About = () => {
 
 // --------------------------
 
+
+
+
+
 useEffect(() => {
-  const url = "https://api.coingecko.com/api/v3/nfts/list";
+
+
+
+
+
+
+  const url = "https://api.rarible.org/v0.1/activities/byItem?itemId=ETHEREUM:0x23581767a106ae21c074b2276d25e5c3e136a68b:1746&type=MINT";
+
+
+  // const url = "https://api.coingecko.com/api/v3/nfts/list";
 
   const fetchData = async () => {
       try {
@@ -62,6 +76,16 @@ useEffect(() => {
                       <span>{post.name}</span><br />
                       <span>{post.asset_platform_id}</span><br />
                       <span>{post.symbol}</span><br />
+
+
+                      {/* ---------------------- */}
+
+
+                      {/* <span>{post.id}</span><br />
+                      <span>{post.name}</span><br />
+                      <span>{post.meta.attributes}</span><br />
+                      <span>{post.creators.value}</span><br />
+                      <span>{post.blockchain}</span><br /> */}
                     </div>
                   </Cards>
                 </>

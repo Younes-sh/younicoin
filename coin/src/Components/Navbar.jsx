@@ -30,7 +30,7 @@ const Navbar = () => {
               </Li>
 
               <Li>
-                <Link to="/about">NFT</Link>
+                <Link to="/nft">NFT</Link>
               </Li>
             </Ul>
           </div>
