@@ -9,8 +9,9 @@ const Div = styled.div`
   margin-top: 60px;
 `;
 const Graph = styled.div`
-  background-color:
+  background-color:orange;
 `;
+
 const Home = () => {
     return (
         <Grid   container
@@ -19,7 +20,7 @@ const Home = () => {
                 alignItems="center" spacing={0}>
                   <Div className='Home' sx={{color:'white'}}>
 
-                        <Graph className='Graph' style={{backgroundColor:'#f96d00',marginTop:'60px'}}>
+                        <Graph className='Graph' style={{marginTop:'60px'}}>
                             <Tab />
                         </Graph>
                         <div className='Coin'>
