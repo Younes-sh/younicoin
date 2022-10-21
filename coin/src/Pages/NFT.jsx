@@ -6,7 +6,7 @@ const ContainerNFT = styled.div`
   height: auto;
   color: aliceblue;
 `;
-const Container =  styled.div`
+const Content =  styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(450px, 1fr));
@@ -38,10 +38,10 @@ useEffect(() => {
 
 
 
-  const url = "https://api.rarible.org/v0.1/activities/byItem?itemId=ETHEREUM:0x23581767a106ae21c074b2276d25e5c3e136a68b:1746&type=MINT";
+  // const url = "https://api.rarible.org/v0.1/activities/byItem?itemId=ETHEREUM:0x23581767a106ae21c074b2276d25e5c3e136a68b:1746&type=MINT";
 
 
-  // const url = "https://api.coingecko.com/api/v3/nfts/list";
+  const url = "https://api.coingecko.com/api/v3/nfts/list";
 
   const fetchData = async () => {
       try {
@@ -62,15 +62,16 @@ useEffect(() => {
 
 
   return (
-    <ContainerNFT>
-      <h1>NFT</h1>
-      <Container>
-          {
-            posts.map((post) => {
-              return (
-                <>
-                  <Cards>
-                    <div>
+    <>
+      <ContainerNFT>
+        <h1>NFT</h1>
+        <Content>
+            {
+              posts.map((post) => {
+                return (
+                  <>
+                    <Cards>
+                    
                       <span>{post.id}</span><br />
                       <span>{post.contract_address}</span><br />
                       <span>{post.name}</span><br />
@@ -78,23 +79,22 @@ useEffect(() => {
                       <span>{post.symbol}</span><br />
 
 
-                      {/* ---------------------- */}
-
-
+                      {/* ---------------------- */}  
                       {/* <span>{post.id}</span><br />
                       <span>{post.name}</span><br />
                       <span>{post.meta.attributes}</span><br />
                       <span>{post.creators.value}</span><br />
                       <span>{post.blockchain}</span><br /> */}
-                    </div>
-                  </Cards>
-                </>
-              )
-            })
-          }
+                      
+                    </Cards>
+                  </>
+                )
+              })
+            }
 
-      </Container>
-    </ContainerNFT>
+        </Content>
+      </ContainerNFT>
+    </>
     
   )
 }
