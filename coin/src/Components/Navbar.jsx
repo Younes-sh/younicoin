@@ -1,31 +1,41 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import Box from '@mui/material/Box';
+import styled from '@emotion/styled';
 
-
-
+const Nav = styled.div`
+  width: 100%;
+  display: flex;
+  background-color: #2d2a36;
+`;
+const Ul = styled.ul`
+  display: flex;
+`;
+const Li = styled.li`
+  list-style-type: none;
+  margin: 15px;
+`;
 
 const Navbar = () => {
   return (
-      <div  >
-        <Box sx={{ width:'100%',display:'flex' , backgroundColor:'#2d2a36'}}>
+      <>
+        <Nav>
           <div>
-            <ul style={{ display:'flex' }}>
-              <li style={{ listStyleType:'none' , margin:15}} >
-                <Link style={{color:'white', textDecoration:'none'}}  to="/">Home</Link>
-              </li>
+            <Ul>
+              <Li>
+                <Link to="/">Home</Link>
+              </Li>
             
-              <li style={{ listStyleType:'none' , margin:15}}  >
-                <Link style={{color:'white', textDecoration:'none'}} to="/contact">Contact</Link>
-              </li>
+              <Li>
+                <Link to="/contact">Contact</Link>
+              </Li>
 
-              <li style={{ listStyleType:'none' , margin:15}}  >
-                <Link style={{color:'white', textDecoration:'none'}} to="/about">NFT</Link>
-              </li>
-            </ul>
+              <Li>
+                <Link to="/about">NFT</Link>
+              </Li>
+            </Ul>
           </div>
-        </Box>
-      </div>
+        </Nav>
+      </>
   )
 }
 
