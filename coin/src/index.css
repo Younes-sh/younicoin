@@ -17,34 +17,14 @@ body {
 
 
 
-/*  */
-
-/* .Coin {
-  width: 96%;
-  height: 1200px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: aliceblue; */
- */
 
 
-.Table{
-  width: 90%;
-  text-align: center;
-}
 
-.infoList  {
-  border: solid 1px;
-  border-radius: 15px;
-}
-.infoList {
-  text-align: center;
-}
-.infoList:nth-child(odd) {
-  background-color: rgba(44, 48, 51, 0.548);
-}
+
+
+
+
+
 
 
 @media screen and (max-width:961px) {
@@ -99,10 +79,6 @@ body {
 }
 /* ------------ */
 
-.w-full{
-  width: 100%;
-  height: 100px;
-}
 
 
 

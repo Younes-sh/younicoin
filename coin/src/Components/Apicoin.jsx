@@ -1,7 +1,15 @@
 import React,{useState , useEffect} from 'react';
-import Box from '@mui/material/Box';
+import styled from '@emotion/styled';
 
 
+const Box = styled.div`
+    width: 90%;
+    margin-top: 40px;
+`;
+
+const Table = styled.table`
+    text-align: center;
+`;
 
 const Coin = () => {
 
@@ -26,11 +34,8 @@ const Coin = () => {
     // -------------------------------
   return (
     <>
-      
-  
-        <div className='Coin'>
-            <Box sx={{ margin:'50px'}}>
-                <table style={{textAlign:'center'}} className='Table'>
+            <Box>
+                <Table >
                     <tr className='TableHead'>
                         <th></th>
                         <th>Name</th>
@@ -57,11 +62,8 @@ const Coin = () => {
                             </>
                         )
                     })}
-                </table>
+                </Table>
             </Box>
-            
-
-        </div>
     </>
   )
 }
