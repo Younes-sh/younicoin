@@ -1,0 +1,33 @@
+module.exports = [
+    {
+        "id":1,
+        "name":"younes",
+        "age":37
+    },
+    {
+        "id":2,
+        "name":"mohsen",
+        "age":39
+    },
+    {
+        "id":3,
+        "name":"hosein",
+        "age":42
+    },
+    {
+        "id":4,
+        "name":"maryam",
+        "age":45
+    },
+    {
+        "id":5,
+        "name":"tavoos",
+        "age":50
+    },
+    {
+        "id":6,
+        "name":"vali",
+        "age":60
+    }
+ 
+]

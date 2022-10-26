@@ -10,7 +10,7 @@ import Box from '@mui/material/Box';
         <h3>BTC/USDT</h3>
         <TradeViewChart 
           containerStyle={{
-            minHeight: '300px',
+            minHeight: '450px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
@@ -25,12 +25,11 @@ import Box from '@mui/material/Box';
 
  const ADAUSDT = () => {
   return (
-    <Box>
       <div className='parent'>
         <h3>ADA/USDT</h3>
         <TradeViewChart
           containerStyle={{
-            minHeight: '300px',
+            minHeight: '450px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
@@ -38,19 +37,17 @@ import Box from '@mui/material/Box';
           pair="ADAUSDT"
         />
       </div>
-    </Box>
   )
 }
 
 
  const ETHUSDT = () => {
   return (
-    <Box>
       <div className='parent'>
           <h3>ETH/USDT</h3>
         <TradeViewChart
           containerStyle={{
-            minHeight: '300px',
+            minHeight: '450px',
             minWidth: '100px',
             marginBottom: '30px',
           }}
@@ -58,7 +55,6 @@ import Box from '@mui/material/Box';
           pair="ETHUSDT"
         />
       </div>
-    </Box>
   )
 }
 
