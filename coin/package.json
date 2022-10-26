@@ -16,7 +16,7 @@
     "@types/react-dom": "^18.0.6",
     "animation.css": "^0.1.0",
     "axios": "^1.1.2",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "gsap": "^3.11.3",
     "lightweight-charts": "^3.8.0",
     "react": "^18.2.0",
@@ -55,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.37"
   }
 }
