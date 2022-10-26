@@ -13,6 +13,7 @@ const Homes = styled.div`
 `;
 const Graph = styled.div`
   width: 80%;
+  height: 600px;
   margin-top: 40px;
   background-color:orange;
  

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import styled from '@emotion/styled';
-
 const Nav = styled.div`
   width: 100%;
   display: flex;
@@ -17,25 +16,25 @@ const Li = styled.li`
 
 const Navbar = () => {
   return (
-      <>
+      <div className='Navbar'>
         <Nav>
           <div>
             <Ul>
-              <Li>
-                <Link to="/">Home</Link>
-              </Li>
-            
-              <Li>
-                <Link to="/contact">Contact</Link>
-              </Li>
+                <Li>
+                  <Link style={{color:'white',textDecoration:'none'}} to="/">Home</Link>
+                </Li>
+              
+                <Li>
+                  <Link style={{color:'white',textDecoration:'none'}} to="/contact">Contact</Link>
+                </Li>
 
-              <Li>
-                <Link to="/nft">NFT</Link>
-              </Li>
+                <Li>
+                  <Link style={{color:'white',textDecoration:'none'}} to="/nft">NFT</Link>
+                </Li>
             </Ul>
           </div>
         </Nav>
-      </>
+      </div>
   )
 }
 
