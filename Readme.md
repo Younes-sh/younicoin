@@ -16,3 +16,4 @@
 
 - lightweight-charts for chart crypto   `npm i lightweight-charts`
 - mui/material   `npm i @mui/material`
+![](./coin/src/asset/chart.gif)
