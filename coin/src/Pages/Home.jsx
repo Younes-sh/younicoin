@@ -43,9 +43,7 @@ const Home = () => {
            
             <Element1>
                 <El>
-                    <h1>Jump start</h1>
-                    <h1>your crypto</h1>
-                    <h1>portfolio</h1>
+                    <h1>Jump start <br />your crypto <br/>portfolio</h1>
                     <p>Coinbase is the easiest place to buy and sell cryptocurrency. <br /> Sign up and get started today.
 </p>
                 </El>

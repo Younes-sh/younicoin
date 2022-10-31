@@ -16,9 +16,9 @@
 }
 @keyframes move1 {
     0%   {margin:200px 1200px};
-    25%  {margin:50px 50px};
-    50%  {margin:100px 20px};
-    100% {margin:-200px 1200px};
+    25%  {margin:50px 50px ; width: 200px ; height: 200px};
+    50%  {margin:100px 20px ; width: 500px; height: 500px};
+    100% {margin:-200px 1200px ; width: 200px ; height: 200px};
 }
 .div2 {
     z-index: 6;
@@ -53,4 +53,12 @@
     25%  {margin:50px 50px};
     50%  {margin:100px 20px};
     100% {margin:-200px 1200px};
+}
+
+Img {
+    animation: upDown infinite  alternate 2s;
+}
+@keyframes upDown {
+    from {margin-top: 0;}
+    to {margin-top: 25px  ;}
 }
