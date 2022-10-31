@@ -1,6 +1,13 @@
 import React, { useMemo, useState } from "react";
+import styled from '@emotion/styled';
 
-export default function Converter() {
+const Div = styled.div`
+  wi
+`;
+
+
+
+const Converter = () => {
   const [value, setValue] = useState(0);
   const [fromCurrency, setFromCurrency] = useState("");
   const [toCurrency, setToCurrency] = useState("");
@@ -29,7 +36,7 @@ export default function Converter() {
   };
 
   return (
-    <div>
+    <Div>
       <form onSubmit={convert}>
         <div>
           <label>value</label>
@@ -62,6 +69,10 @@ export default function Converter() {
       <div>
         {value} {fromCurrency} is {result.toFixed(2)} {toCurrency}
       </div>
-    </div>
+    </Div>
   );
 }
+
+
+
+export default Converter ;

@@ -20,8 +20,11 @@ const Navbar = () => {
         <Nav>
           <div>
             <Ul>
-                <Li>
+              <Li>
                   <Link style={{color:'white',textDecoration:'none'}} to="/">Home</Link>
+                </Li>
+                <Li>
+                  <Link style={{color:'white',textDecoration:'none'}} to="/market">Market</Link>
                 </Li>
               
                 <Li>

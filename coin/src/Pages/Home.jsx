@@ -1,40 +1,68 @@
-import React from 'react'
-import Coins from '../Components/Apicoin';
-import Tab from '../Components/Tab/Tab'
-import styled from 'styled-components';
+import React from 'react';
+import styled from '@emotion/styled';
+import  './Home.css'
+import Image from '../asset/mobile2.png'
+const Div = styled.div`
+    color:white;
+    padding-top:60px;
+    position:relative;
 
-const Homes = styled.div`
-  color:white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
 `;
-const Graph = styled.div`
-  width: 80%;
-  height: 600px;
-  margin-top: 40px;
-  background-color:orange;
- 
+const Element1 = styled.div`
+    width:100%;
+    height:700px;
+    display:flex;
+    position:absolute;
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.68);
+    z-index:9;
+    justify-content:center;
 `;
-
+const Element2 = styled.div`
+    width:100%;
+    height:700px;
+    display:flex
+`
+const El = styled.div`
+    width:40%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    font-size:20px;
+`;
+const Img = styled.img`
+    width:500px;
+    padding-top:100px;
+`;
 const Home = () => {
     return (
-       
-                  <Homes className='Home' sx={{color:'white'}}>
-
-                        <Graph>
-                            <Tab />
-                        </Graph>
-                        <div className='Coin'>
-                          <Coins />
-                        </div>
-                
-                  
-                  </Homes>
+        <Div>
+           
+            <Element1>
+                <El>
+                    <h1>Jump start</h1>
+                    <h1>your crypto</h1>
+                    <h1>portfolio</h1>
+                    <p>Coinbase is the easiest place to buy and sell cryptocurrency. <br /> Sign up and get started today.
+</p>
+                </El>
+                <El>
+                    <Img src={Image} />
+                </El>
+            </Element1>
+            <Element2>
+                <div className='container'>
+                    <div className='div1' style={{width:500,height:500 , backgroundColor:'yellow',borderRadius:'50%'}}>1</div>
+                    <div className='div2' style={{width:400,height:400 , backgroundColor:'red',borderRadius:'50%'}}>2</div>
+                    <div className='div3' style={{width:160,height:160 , backgroundColor:'blue',borderRadius:'50%'}}>3</div>
+                    <div className='div4' style={{width:290,height:290 , backgroundColor:'white',borderRadius:'50%'}}>4</div>
+                </div>
+            </Element2>
+        </Div>
     )
-  }
-
+}
 
 export default Home ;
