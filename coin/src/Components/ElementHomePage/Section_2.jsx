@@ -10,8 +10,18 @@ const Div = styled.div`
 const Section_2 = () => {
     return (
         <Div>
-                <h1>younes sheikhlar 2</h1>
-
+            <div>
+                <h3>$76 billion</h3>
+                <span>24h trading volume on Binance exchange</span>
+                <h3>350+</h3>
+                <span>Cryptocurrencies listed</span>
+            </div>
+            <div>
+                <h3>120 million</h3>
+                <span>Registered users</span>
+                <h3>0.10%</h3>
+                <span>Lowest transaction fees</span>
+            </div>
         </Div>
     )
 }
