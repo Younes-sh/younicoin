@@ -1,19 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
-
 const Div = styled.div`
     width:100%;
     height:700px;
 `;
 
-const Section_4 = () => {
+const Section_2 = () => {
     return (
         <Div>
-                <h1>younes sheikhlar 4</h1>
-            
+                <h1>younes sheikhlar 2</h1>
+
         </Div>
     )
 }
 
-export default Section_4
+export default Section_2

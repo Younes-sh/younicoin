@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import  './Home.css'
-import Image from '../asset/mobile2.png'
+import Search from '../Components/Search/Search';
+import  './Home.css';
+import Section_1 from '../Components/ElementHomePage/Section_1';
+import Section_2 from '../Components/ElementHomePage/Section_2';
+import Section_3 from '../Components/ElementHomePage/Section_3';
+import Section_4 from '../Components/ElementHomePage/Section_4';
+import Image from '../asset/mobile2.png';
 const ContainerHome = styled.div`
     width:100%;
     height:auto;
@@ -78,6 +83,7 @@ const Home = () => {
                         <h1>Jump start <br />your crypto <br/>portfolio</h1>
                         <p>Younicoin is the easiest place to buy and sell cryptocurrency. <br /> Sign up and get started today.
                         </p>
+                        <Search />
                     </El1>
                     <El2 className='ContainerImage'>
                         <Img className='imageMobile' src={Image} />
@@ -91,6 +97,10 @@ const Home = () => {
                         <div className='div4' style={{width:290,height:290 , backgroundColor:'white'}}>4</div>
                     </Container>
                 </Element2>
+                <Section_1 />
+                <Section_2 />
+                <Section_3 />
+                <Section_4 />
             </ContainerHome>
         </div>
     )
