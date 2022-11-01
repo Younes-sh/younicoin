@@ -3,8 +3,10 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 const Div = styled.div`
-    width:100%;
-    height:700px;
+width:70%;
+height:700px;
+padding:50px;
+background-color:gray;
 `;
 
 

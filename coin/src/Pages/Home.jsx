@@ -7,6 +7,7 @@ import Section_2 from '../Components/ElementHomePage/Section_2';
 import Section_3 from '../Components/ElementHomePage/Section_3';
 import Section_4 from '../Components/ElementHomePage/Section_4';
 import Image from '../asset/mobile2.png';
+
 const ContainerHome = styled.div`
     width:100%;
     height:auto;
@@ -30,13 +31,20 @@ const Element2 = styled.div`
     display:flex
 `
 const El1 = styled.div`
-    width:40%;
+    width:35%;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:start;
-    font-size:20px;
+    h1 {
+        font-size:55px;
+    }
+    @media screen and (max-width:412px) {
+        h1 {
+            font-size:5px;
+        }
+    }
 `;
 const El2 = styled.div`
     width:40%;
@@ -44,9 +52,9 @@ const El2 = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:start;
+    align-items:center;
     font-size:20px;
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1118px) {
         display:none;
     }
 `;
@@ -71,7 +79,24 @@ const Container = styled.div`
         font-size: 35px;
         position: absolute;
         border-radius:50%
+        @media screen and (max-width:1118px) {
+            display:none;
+        }
     }
+    @media screen and (max-width:1118px) {
+        div {
+            display:none;
+        }
+    }
+   
+
+`;
+const ContainerSections = styled.div`
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 `;
 const Home = () => {
     return (
@@ -97,10 +122,12 @@ const Home = () => {
                         <div className='div4' style={{width:290,height:290 , backgroundColor:'white'}}>4</div>
                     </Container>
                 </Element2>
-                <Section_1 />
-                <Section_2 />
-                <Section_3 />
-                <Section_4 />
+                <ContainerSections>
+                    <Section_1 />
+                    <Section_2 />
+                    <Section_3 />
+                    <Section_4 />
+                </ContainerSections>
             </ContainerHome>
         </div>
     )
