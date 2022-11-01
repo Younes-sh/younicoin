@@ -1,15 +1,5 @@
-.container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
-.container div {
-    text-align: center;
-    text-shadow: 0 0 5px black;
-    font-size: 35px;
-    position: absolute;
-}
+
+
 .div1 {
     margin: 0 27%;
     z-index: 5;

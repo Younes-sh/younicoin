@@ -5,6 +5,7 @@ const Nav = styled.div`
   width: 100%;
   display: flex;
   background-color: #2d2a36;
+  z-index:99;
 `;
 const Ul = styled.ul`
   display: flex;
