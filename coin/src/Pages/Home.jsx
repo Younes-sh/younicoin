@@ -78,10 +78,7 @@ const Container = styled.div`
         text-shadow: 0 0 5px black;
         font-size: 35px;
         position: absolute;
-        border-radius:50%
-        @media screen and (max-width:1118px) {
-            display:none;
-        }
+        border-radius:50%;
     }
     @media screen and (max-width:1118px) {
         div {
@@ -105,7 +102,7 @@ const Home = () => {
             
                 <Element1>
                     <El1>
-                        <h1>Jump start <br />your crypto <br/>portfolio</h1>
+                        <h1>Jump start your crypto portfolio</h1>
                         <p>Younicoin is the easiest place to buy and sell cryptocurrency. <br /> Sign up and get started today.
                         </p>
                         <Search />
