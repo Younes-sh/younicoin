@@ -116,10 +116,10 @@ const Home = () => {
                 </Element1>
                 <Element2>
                     <Container className='container'>
-                        <div className='div1' style={{width:380,height:380 , backgroundColor:'yellow'}}>1</div>
-                        <div className='div2' style={{width:380,height:380 , backgroundColor:'red'}}>2</div>
-                        <div className='div3' style={{width:160,height:160 , backgroundColor:'blue'}}>3</div>
-                        <div className='div4' style={{width:290,height:290 , backgroundColor:'white'}}>4</div>
+                        <div className='div1' style={{width:380,height:380 , backgroundColor:'yellow'}}></div>
+                        <div className='div2' style={{width:380,height:380 , backgroundColor:'red'}}></div>
+                        <div className='div3' style={{width:160,height:160 , backgroundColor:'blue'}}></div>
+                        <div className='div4' style={{width:290,height:290 , backgroundColor:'white'}}></div>
                     </Container>
                 </Element2>
                 <ContainerSections>
