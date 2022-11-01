@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import  './Home.css'
 import Image from '../asset/mobile2.png'
 const Div = styled.div`
+    width:100%;
+    height:auto;
     color:white;
     padding-top:60px;
     position:relative;
@@ -36,6 +38,11 @@ const El = styled.div`
 const Img = styled.img`
     width:500px;
     padding-top:100px;
+    animation: upDown 3s infinite  alternate ;
+    @keyframes upDown {
+        from {margin-top: 0;};
+        to {margin-top: 25px ; };
+    }
 `;
 const Home = () => {
     return (
@@ -48,7 +55,7 @@ const Home = () => {
 </p>
                 </El>
                 <El>
-                    <Img src={Image} />
+                    <Img className='imageMobile' src={Image} />
                 </El>
             </Element1>
             <Element2>

@@ -8,57 +8,49 @@
     text-align: center;
     text-shadow: 0 0 5px black;
     font-size: 35px;
+    position: absolute;
 }
 .div1 {
+    margin: 0 27%;
     z-index: 5;
-    position: absolute;
-    animation: move1 infinite alternate 40s ;
+    animation: move1 infinite 21s forwards alternate;
 }
 @keyframes move1 {
-    0%   {margin:200px 1200px};
-    25%  {margin:50px 50px ; width: 200px ; height: 200px};
-    50%  {margin:100px 20px ; width: 500px; height: 500px};
-    100% {margin:-200px 1200px ; width: 200px ; height: 200px};
+    0% {margin: 0 50%};
+    25% {margin: 10% 20%};
+    50% {margin: 5% 30%};
 }
+
 .div2 {
     z-index: 6;
-    position: absolute;
-    animation: move2 infinite forwards alternate 31s ;
+    animation: move2 infinite 31s forwards alternate;
 }
 @keyframes move2 {
-    0%   {margin:200px 1100px};
-    25%  {margin:500px 250px};
-    50%  {margin:100px 200px};
-    100% {margin:-200px -70px};
+    0% {margin: 10% 5%};
+    25% {margin: 0% 50%};
+    50% {margin: 5% 30%};
 }
 
 .div3 {
     z-index: 7;
-    position: absolute;
-    animation: move3 infinite reverse alternate 31s ;
+    animation: move3 infinite 35s forwards alternate;
 }
 @keyframes move3 {
-    0%   {margin:500px 400px};
-    25%  {margin:100px 950px};
-    50%  {margin:400px 20px};
-    100% {margin:200px -70px};
-}
-.div4 {
-    z-index: 8;
-    position: absolute;
-    animation: move4 infinite forwards alternate 11s ;
-}
-@keyframes move4 {
-    0%   {margin:200px 1200px};
-    25%  {margin:50px 50px};
-    50%  {margin:100px 20px};
-    100% {margin:-200px 1200px};
+    0% {margin: 10% 70%};
+    25% {margin: 0% 30%};
+    50% {margin: 25% 20%};
+    70% {margin: 0% 70%};
 }
 
-Img {
-    animation: upDown infinite  alternate 2s;
+.div4 {
+    z-index: 8;
+    animation: move4 21s infinite  alternate-reverse;
+    animation: name duration  direction fill-mode;
 }
-@keyframes upDown {
-    from {margin-top: 0;}
-    to {margin-top: 25px  ;}
+@keyframes move4 {
+    0% {margin: 0% 70%};
+    25% {margin: 25% 20%};
+    50% {margin: 1% 70%};
+    100% {margin: 0% 30%};
 }
+
