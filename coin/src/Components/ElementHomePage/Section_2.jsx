@@ -5,6 +5,11 @@ const Div = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+
+    @media (max-width:950px) {
+        
+        flex-direction:column;
+    }
     div {
         margin-top:55px;
         width:80%;
