@@ -5,7 +5,6 @@ const Div = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-
     @media (max-width:950px) {
         
         flex-direction:column;
@@ -21,7 +20,7 @@ const Div = styled.div`
     }
     `;
     const Elements = styled.div`
-        minwidth:400px;
+        min-width:30px;
         height:200px;
         margin-bottom:10px;
         padding:20px;

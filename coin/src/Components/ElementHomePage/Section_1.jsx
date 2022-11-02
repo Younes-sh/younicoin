@@ -41,7 +41,7 @@ const Section_2 = () => {
     return (
         <Div>
                 <div>
-                    <Img src={landescapMobile} />
+                    <Img src={landescapMobile} alt='Trading'/>
                 </div>
                 <div>
                     <div className="content-container" onScroll={handleScroll}>

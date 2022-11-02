@@ -9,14 +9,14 @@ function App() {
 	return (
 		<div>
 			<BrowserRouter>
-				<Box sx={{display:'flex' , flexDirection:'column'}}>
+				<Box sx={{width:'100%',height:'auto',display:'flex' , flexDirection:'column', position:'relative'}}>
 					<Box sx={{ width:'100%',position:'fixed',zIndex:'9'}}>
 						<Navbar />
 					</Box>
 
 						<Routing />
 
-					<Box sx={{ display: {  md: 'none' } ,  zIndex:8}}>
+					<Box sx={{ display: {  md: 'none' } }}>
 						<NavbarMobile />
 					</Box>
 				</Box>
