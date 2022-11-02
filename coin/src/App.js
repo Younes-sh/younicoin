@@ -16,7 +16,7 @@ function App() {
 
 						<Routing />
 
-					<Box sx={{ display: {  md: 'none' } }}>
+					<Box sx={{ display: {  md: 'none' } ,  zIndex:8}}>
 						<NavbarMobile />
 					</Box>
 				</Box>
