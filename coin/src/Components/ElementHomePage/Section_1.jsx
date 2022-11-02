@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import styled from '@emotion/styled';
 import landescapMobile from '../../asset/mobile3.png';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -28,19 +28,27 @@ const Img = styled.img`
 
 
 
+
 const Section_2 = () => {
+// -------------------------------------------
+    const handleScroll = e => {
+        let element = e.target
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+          // do something at end of scroll
+        }
+      }
+// -------------------------------------------
     return (
         <Div>
                 <div>
                     <Img src={landescapMobile} />
                 </div>
                 <div>
-
-                <ScrollAnimation animateIn="fadeIn">
-                    <h1>Buy, trade, and hold 350+ cryptocurrencies on Binance</h1>
-                    <p>Trade some of the world’s largest and most popular companies, including Amazon, Netflix, Tesla and many more.  </p>
-                    <p>Maximise your trading opportunities with CFD shares and benefit from the price movements with a lower investment. MultiBank Group offers more than 20,000 shares to choose from the largest multinational companies, with margin requirements as low as 5%. </p>
-                </ScrollAnimation>
+                    <div className="content-container" onScroll={handleScroll}>
+                        <h1>Buy, trade, and hold 350+ cryptocurrencies on Binance</h1>
+                        <p>Trade some of the world’s largest and most popular companies, including Amazon, Netflix, Tesla and many more.  </p>
+                        <p>Maximise your trading opportunities with CFD shares and benefit from the price movements with a lower investment. MultiBank Group offers more than 20,000 shares tochoose from the largest multinational companies, with margin requirements as low as 5%. </p>
+                    </div>
                 </div>
         </Div>
     )

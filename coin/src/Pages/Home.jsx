@@ -6,6 +6,9 @@ import Section_1 from '../Components/ElementHomePage/Section_1';
 import Section_2 from '../Components/ElementHomePage/Section_2';
 import Section_3 from '../Components/ElementHomePage/Section_3';
 import Section_4 from '../Components/ElementHomePage/Section_4';
+
+// import Test from '../Components/ElementHomePage/Test';
+
 import Image from '../asset/mobile2.png';
 
 const ContainerHome = styled.div`
@@ -28,21 +31,25 @@ const Element1 = styled.div`
 const Element2 = styled.div`
     width:100%;
     height:700px;
-    display:flex
+    display:flex;
+    
 `
 const El1 = styled.div`
     width:35%;
-    height:100%;
+    height:auto;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:start;
+   
     h1 {
         font-size:55px;
     }
-    @media screen and (max-width:412px) {
+    @media (max-width:888px) {
+        width:80%;
+        align-items:center;
         h1 {
-            font-size:5px;
+            font-size:35px;
         }
     }
 `;
@@ -97,7 +104,7 @@ const ContainerSections = styled.div`
 `;
 const Home = () => {
     return (
-        <div style={{paddingTop:'70px'}} >
+        <div  >
             <ContainerHome>
             
                 <Element1>
@@ -120,6 +127,7 @@ const Home = () => {
                     </Container>
                 </Element2>
                 <ContainerSections>
+                    {/* <Test /> */}
                     <Section_1 />
                     <Section_2 />
                     <Section_3 />

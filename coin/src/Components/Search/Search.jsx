@@ -6,16 +6,21 @@ const Div = styled.div`
 `;
 const Input = styled.input`
     width:250px;
-    padding: 5px;
-    font-size:20px;
+    font-size:18px;
     color:white;
     out-line:none;
     background-color:transparent;
 `;
 const Button = styled.button`
-    width:120px;
-    font-size:20px;
+    width:50%;
+    font-size:18px;
     border:none;
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+        width:100px;
+}
 `;
 const Search = () => {
     return (
