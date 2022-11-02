@@ -3,12 +3,13 @@
 .div1 {
     margin: 0 27%;
     z-index: 5;
-    animation: move1 infinite 21s forwards alternate;
+    animation: move1 infinite 15s forwards alternate;
 }
 @keyframes move1 {
-    0% {margin: 0 50%};
-    25% {margin: 10% 20%};
-    50% {margin: 5% 30%};
+    0% {margin: 0 0};
+    25% {margin: 50% 55%};
+    50% {margin: 15% -30%};
+    100% {margin: 15%  30%};
 }
 
 .div2 {
@@ -16,20 +17,21 @@
     animation: move2 infinite 31s forwards alternate;
 }
 @keyframes move2 {
-    0% {margin: 10% 5%};
-    25% {margin: 0% 50%};
+    0% {margin: 15% 50%};
+    25% {margin: 20% 0%};
     50% {margin: 5% 30%};
 }
 
 .div3 {
     z-index: 7;
-    animation: move3 infinite 35s forwards alternate;
+    animation: move3  infinite 3s forwards alternate;
 }
 @keyframes move3 {
-    0% {margin: 10% 70%};
-    25% {margin: 0% 30%};
-    50% {margin: 25% 20%};
+    0% {margin: 0 0};
+    25% {margin: 70px 30%};
+    50% {margin: 10% 20%};
     70% {margin: 0% 70%};
+    100% {margin: 10% 30%};
 }
 
 .div4 {
@@ -39,8 +41,8 @@
 }
 @keyframes move4 {
     0% {margin: 0% 70%};
-    25% {margin: 25% 20%};
-    50% {margin: 1% 70%};
+    25% {margin: 8% 20%};
+    50% {margin: -10% 70%};
     100% {margin: 0% 30%};
 }
 
