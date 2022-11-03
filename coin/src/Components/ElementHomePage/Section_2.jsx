@@ -2,7 +2,7 @@ import React  from 'react';
 import styled from '@emotion/styled';
 
 const Div = styled.div`
-    width:80%;
+    width:75%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -27,7 +27,7 @@ const Div = styled.div`
         padding:20px;
         display:flex;
         flex-direction:column;
-        border:solid 1px gray;
+        // border:solid 1px gray;
         position: relative;
         :hover {
             border:solid 1px gold;
