@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 const Div = styled.div`
     display:flex;
+    margin-top: 40px;
 `;
 const Input = styled.input`
     width:250px;
