@@ -4,22 +4,29 @@ import styled from '@emotion/styled';
 const Nav = styled.div`
   width: 100%;
   display: flex;
+  justify-content: center;
   background-color: #2d2a36;
   z-index:99;
 `;
+const ContainerMenu = styled.div`
+  width: 75%;
+  display: flex;
+`;
 const Ul = styled.ul`
   display: flex;
+  justify-content: start;
+  padding: 10px;
+  gap: 50px;
 `;
 const Li = styled.li`
   list-style-type: none;
-  margin: 15px;
 `;
 
 const Navbar = () => {
   return (
       <div className='Navbar'>
         <Nav>
-          <div>
+          <ContainerMenu>
             <Ul>
               <Li>
                   <Link style={{color:'white',textDecoration:'none'}} to="/">Home</Link>
@@ -36,7 +43,7 @@ const Navbar = () => {
                   <Link style={{color:'white',textDecoration:'none'}} to="/nft">NFT</Link>
                 </Li>
             </Ul>
-          </div>
+          </ContainerMenu>
         </Nav>
       </div>
   )
