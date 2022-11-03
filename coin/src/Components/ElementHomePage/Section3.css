@@ -1,0 +1,19 @@
+.image1 {
+    width: 30%;
+    z-index: 1;
+}
+.image2 {
+    width: 50%;
+    margin: 20%;
+    z-index: 2;
+}
+.image3 {
+    width: 30%;
+    margin: 0  50%;
+    z-index: 3;
+}
+.image4 {
+    width: 20%;
+    margin: 48% 60%;
+    z-index: 4;
+}
