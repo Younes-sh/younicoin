@@ -23,12 +23,15 @@ const Div = styled.div`
     const Elements = styled.div`
         min-width:30px;
         height:200px;
-        margin-bottom:10px;
+        // margin-bottom:10px ;
+        margin: 10px 5px;
         padding:20px;
         display:flex;
         flex-direction:column;
-        // border:solid 1px gray;
         position: relative;
+
+        // -----------------
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         :hover {
             border:solid 1px gold;
         }
