@@ -5,7 +5,10 @@ const Nav = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #2d2a36;
+  background: rgba( 73, 25, 114, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
   z-index:99;
 `;
 const ContainerMenu = styled.div`
