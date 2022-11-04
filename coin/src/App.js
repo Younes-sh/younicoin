@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom" ;
 import Routing from "./routing" ;
 import Navbar from './Components/Navbar' ;
 
-import NavbarMobile from "./Components/NavbarMobile/NavbarMobile";
+// import NavbarMobile from "./Components/NavbarMobile/NavbarMobile";
 import { Box } from "@mui/system";
 function App() {
 	return (
@@ -17,7 +17,7 @@ function App() {
 						<Routing />
 
 					<Box sx={{ display: {  md: 'none' } }}>
-						<NavbarMobile />
+						{/* <NavbarMobile /> */}
 					</Box>
 				</Box>
 			</BrowserRouter>

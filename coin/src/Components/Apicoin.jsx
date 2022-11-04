@@ -10,6 +10,12 @@ const Box = styled.div`
 const Table = styled.table`
     text-align: center;
 `;
+const Td = styled.td`
+    box-shadow: 0 0 1px gray;
+    padding: 5px;
+    border: none;
+    outline: none;
+`;
 
 const Coin = () => {
 
@@ -49,13 +55,13 @@ const Coin = () => {
                         return (
                             <>
                                 <tr className='infoList'>
-                                    <td className=''><img src={post.image.small} alt='symbol'/></td>                               
-                                    <td className=''>{post.name}</td>
-                                    <td className='display4'>{post.symbol}</td>
-                                    <td className='display3'>{post.market_data.price_change_24h}</td>
-                                    <td className=''>{post.market_data.total_supply}</td>
-                                    <td className='display2'>{post.market_data.total_supply}</td>
-                                    <td className='display'>{post.last_updated}</td>
+                                    <Td className=''><img src={post.image.small} alt='symbol'/></Td>                               
+                                    <Td className=''>{post.name}</Td>
+                                    <Td className='display4'>{post.symbol}</Td>
+                                    <Td className='display3'>{post.market_data.price_change_24h}</Td>
+                                    <Td className=''>{post.market_data.total_supply}</Td>
+                                    <Td className='display2'>{post.market_data.total_supply}</Td>
+                                    <Td className='display'>{post.last_updated}</Td>
                                         {/* ------------------------------------------ */}
                                 </tr>
                             

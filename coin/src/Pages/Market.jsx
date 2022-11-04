@@ -1,5 +1,6 @@
 import React from 'react'
-import Coins from '../Components/Apicoin';
+// import Coins from '../Components/Apicoin';
+import Coins from '../Components/Test'
 import Tab from '../Components/Tab/Tab'
 import styled from 'styled-components';
 
@@ -18,21 +19,22 @@ const Graph = styled.div`
   background-color:orange;
  
 `;
-
+const ContainerCoin = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 const Home = () => {
     return (
        
-                  <Homes className='Home' sx={{color:'white'}}>
-
-                        <Graph>
-                            <Tab />
-                        </Graph>
-                        <div className='Coin'>
-                          <Coins />
-                        </div>
-                
-                  
-                  </Homes>
+      <Homes className='Home' sx={{color:'white'}}>
+        <Graph>
+            <Tab />
+        </Graph>
+        <ContainerCoin>
+          <Coins />
+        </ContainerCoin>
+      </Homes>
     )
   }
 

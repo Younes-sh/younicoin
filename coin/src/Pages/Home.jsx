@@ -52,6 +52,9 @@ const El1 = styled.div`
             font-size:35px;
         }
     }
+    p {
+        font-size: 24px;
+    }
 `;
 const El2 = styled.div`
     width:40%;
