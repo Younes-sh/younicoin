@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import secure from '../../asset/protection.png';
+import secure from '../../asset/technologie.png';
 const Div = styled.div`
 width:70%;
 height:700px;
 margin-bottom:50px;
 display:flex;
+justify-content:space-between;
+align-items:center;
 // background-color:gray;
+@media (max-width:1259px){
+    flex-direction:column;
+}
 `;
 
 const ContainerImage = styled.div`
@@ -14,8 +19,6 @@ const ContainerImage = styled.div`
     height:auto;
     // background-color:#102626; 
     position:relative;
-
-    
 `;
 
 const Rotation = styled.div`
@@ -32,7 +35,12 @@ const Img = styled.img`
     width:100%;
 `;
 const ContainerTex = styled.div`
-
+    p {
+        max-width:600px;
+    }
+    @media (max-width:1259px){
+        margin-bottom:200px;
+    }
 `;
 
 const Section_4 = () => {
@@ -47,7 +55,13 @@ const Section_4 = () => {
                 </div>
             </ContainerImage>
             <ContainerTex>
-                <div></div>
+                <div>
+                    <h1>Security</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore, aliquid ullam voluptates rerum provident eligendi accusamus distinctio dolores expedita dolorem quisquam at itaque! Fugiat voluptas iure impedit iusto illum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore, aliquid ullam voluptates rerum provident eligendi accusamus distinctio dolores expedita dolorem quisquam at itaque! Fugiat voluptas iure impedit iusto illum.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi iure inventore eius est tempora provident et officia distinctio nisi quod ad ratione, repudiandae autem ab. Eligendi quia ab natus!
+                    </p>
+                </div>
             </ContainerTex>
         </Div>
     )
