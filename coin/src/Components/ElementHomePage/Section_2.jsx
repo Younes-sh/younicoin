@@ -32,6 +32,7 @@ const Div = styled.div`
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         :hover {
             box-shadow: 0 4px 8px 0 rgba(70, 150, 131, 0.8), 0 6px 20px 0 rgba(0, 0, 20, 0.19);
+            transition:  0.7s ease-in-out ;
         }
     `;
 const Section_2 = () => {
