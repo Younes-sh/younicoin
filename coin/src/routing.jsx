@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from './Pages/Home';
 import Market from "./Pages/Market" ;
-import Contact from './Pages/Contact' ;
+import Exchanges from './Pages/Exchanges' ;
 import NFT from './Pages/NFT' ;
 
 const Routing = () => {
@@ -16,7 +16,7 @@ const Routing = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/market" element={<Market />} />
             <Route exact path="/nft" element={<NFT />} />
-            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/exchanges" element={<Exchanges />} />
          
             
         </Routes>

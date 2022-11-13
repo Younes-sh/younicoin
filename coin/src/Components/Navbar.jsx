@@ -39,7 +39,7 @@ const Navbar = () => {
                 </Li>
               
                 <Li>
-                  <Link style={{color:'white',textDecoration:'none'}} to="/contact">Contact</Link>
+                  <Link style={{color:'white',textDecoration:'none'}} to="/exchanges">Exchanges</Link>
                 </Li>
 
                 <Li>
