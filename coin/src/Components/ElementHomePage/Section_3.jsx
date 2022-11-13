@@ -1,6 +1,6 @@
 import React from 'react';
 import Image_1 from '../../asset/NFT_1.png';
-import Image_2  from '../../asset/NFT_2r.png';
+// import Image_2  from '../../asset/NFT_2r.png';
 import Image_3  from '../../asset/NFT_3.png';
 import Image_4  from '../../asset/NFT_4.png';
 import Image_5  from '../../asset/NFT_5.png';
@@ -52,7 +52,7 @@ const Section_3 = () => {
             </div>
             <Picture>
                 <Img className='image1' src={Image_1} alt='NFT1'/>                       
-                <Img className='image2' src={Image_2} alt='NFT2'/>                       
+                {/* <Img className='image2' src={Image_2} alt='NFT2'/>                        */}
                 <Img className='image3' src={Image_3} alt='NFT3'/>                       
                 <Img className='image4' src={Image_4} alt='NFT4'/>                       
                 <Img className='image5' src={Image_5} alt='NFT5'/>                       
