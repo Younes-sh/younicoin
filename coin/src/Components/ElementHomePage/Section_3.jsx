@@ -14,15 +14,15 @@ const Div = styled.div`
     padding:10px;
     display:flex;
     justify-content:space-between;
-    gap:5px
+    gap:5px;
 
-    @media (max-width:1103px) {
-        flex-direction:column;
-        justify-content:center;
-    }
+   @media (max-width:1259px){
+    flex-direction:column;
+    justify-content:start;
+   }
 `;
 const Picture = styled.div`
-    width: 70%;
+    width: 75%;
     max-height: 200px;
     padding: 10px;
     position: relative;
@@ -35,6 +35,10 @@ const Img = styled.img`
     animation:move 0.7s ;
     @keyframe move {
         rotate:scalx(20deg)
+    }
+    @media (max-width:1259px){
+        position:relative;
+        margin:0;
     }
 `;
 
