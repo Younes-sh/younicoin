@@ -16,18 +16,18 @@ module.exports = [
     },
     {
         "id":4,
-        "name":"maryam",
-        "age":45
+        "name":"hamid",
+        "age":18
     },
     {
         "id":5,
-        "name":"tavoos",
-        "age":50
+        "name":"pejman",
+        "age":15
     },
     {
         "id":6,
-        "name":"vali",
-        "age":60
+        "name":"rasool",
+        "age":26
     }
  
 ]
