@@ -1,6 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import styled from '@emotion/styled';
+
 const Nav = styled.div`
   width: 100%;
   display: flex;
@@ -20,9 +21,14 @@ const Ul = styled.ul`
   justify-content: start;
   padding: 10px;
   gap: 50px;
+
 `;
 const Li = styled.li`
   list-style-type: none;
+
+.active {
+    border-top: 0.2rem #d1ad1d solid; 
+}
 `;
 
 const Navbar = () => {
@@ -32,18 +38,18 @@ const Navbar = () => {
           <ContainerMenu>
             <Ul>
               <Li>
-                  <Link style={{color:'white',textDecoration:'none'}} to="/">Home</Link>
+                  <NavLink style={{color:'white',textDecoration:'none'}} to="/" className='navlink' >Home</NavLink>
                 </Li>
                 <Li>
-                  <Link style={{color:'white',textDecoration:'none'}} to="/market">Market</Link>
+                  <NavLink style={{color:'white',textDecoration:'none'}} to="/market" className='navlink' >Market</NavLink>
                 </Li>
               
                 <Li>
-                  <Link style={{color:'white',textDecoration:'none'}} to="/exchanges">Exchanges</Link>
+                  <NavLink style={{color:'white',textDecoration:'none'}} to="/exchanges" className='navlink' >Exchanges</NavLink>
                 </Li>
 
                 <Li>
-                  <Link style={{color:'white',textDecoration:'none'}} to="/nft">NFT</Link>
+                  <NavLink style={{color:'white',textDecoration:'none'}} to="/nft" className='navlink' >NFT</NavLink>
                 </Li>
             </Ul>
           </ContainerMenu>
